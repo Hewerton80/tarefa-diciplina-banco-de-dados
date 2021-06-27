@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --padding-article: 24px;
+    --bg-article: #fff;
+}
+body {
+    background: #eee;
+}
+main {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 240px;
+    background: darkblue;
+    background-image: url('../imgs/konoha.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: var(--bg-article);
+    padding: var(--padding-article);
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+img {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    margin: 0 auto 8px auto;
+    margin-top: calc(-84px - var(--padding-article));
+    border: 4px solid var(--bg-article);
+}
+p, h1 {
+    text-align: center;
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+}
+h1 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
